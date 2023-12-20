@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head> 
+   <title>Health Information</title> 
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1"> 
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> 
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+   <script>
+    $(document).ready
+    (function()
+    {
+    $('[data-toggle="tooltip"]').tooltip();
+    });
+   </script>
+ </head>
+ <body>
+  <div class="container-fluid">
+
+  <ul class="nav nav-tabs">
+    <li><a href="Home.html">Home</a></li>
+    <li class="active"><a href="#">Health Information</a></li>
+    <li><a href="for medical professionals.html">For Medical Professionals</a></li>
+    <li><a href="research.html">Research</a></li>
+    <li class="dropdown">
+     <a class="dropdown-toggle" data-toggle="dropdown" 
+        href="#">College Of Medicine And Science<span class="caret"></span></a>
+      <ul class="dropdown-menu">
+       <li><a href="#">LTH Graduate School of Biomedical Sciences</a></li>
+       <li><a href="#">LTh School of Health Sciences</a></li>
+       <li><a href="#">LTH School of Continuous Professional Development</a></li>
+       <li><a href="#">LTH School of Graduate Medical Education</a></li>
+      </ul>
+    </li>
+   </ul>
+
+    <h1><kbd>Patient Care and Health Information</kbd></h1>
+
+   <ul class="breadcrumb">
+    <li><a href="#">Home</a></li>
+    <li><a href="#">Health Information</a></li>
+    <li class="active">Book an Appointment</li>
+   </ul>
+
+   <ul class="nav nav-tabs nav-stacked">
+    <li class="active"><a href="#">Book an Appointment</a></li>
+    <li><a href="#">Diseases and Conditions</a></li>
+    <li><a href="#">Symptoms</a></li>
+    <li><a href="#">Tests and Procedures</a></li>
+    <li><a href="#">Drugs and Supplements</a></li>   
+   </ul><center><ul class="pagination">
+   <li class="active"><a href="#">1</a></li>
+   <li><a href="#" data-toggle="tooltip" title="Diseases and Conditions" data-placement="left">2</a></li>
+   <li><a href="#" data-toggle="tooltip" title="Symptoms" data-placement="top">3</a></li>
+   <li><a href="#" data-toggle="tooltip" title="Tests and Procedures" data-placement="bottom">4</a></li>
+   <li><a href="#" data-toggle="tooltip" title="Drugs an Appointment" data-placement="right">5</a></li>
+    </ul></center>
+
+  <div class="row">
+   <div class="col-sm-4" style="background-color:grey">
+    <center><h2><code>Book an Appointment</code></h2></center>
+         <span class="glyphicon glyphicon-user"></span>
+         <input type = "text" placeholder="Enter Your Name"><br>
+         <span class="glyphicon glyphicon-calendar"></span> 
+         <input type = "date" placeholder="dd/mm/yyyy"><br>
+         <a href="#"><span class="glyphicon glyphicon-phone"></span></a>
+         <input type = "phone number" placeholder="Contact Number"><br><br>
+
+         <div class="btn-group">
+    <button type="button" class="btn btn-danger">Department</button>
+    <button type="button" class="btn btn-danger dropdown-toggle" 
+      data-toggle="dropdown"><span class="caret"></span></button>
+      <ul class="dropdown-menu">
+         <li><a href="#">neurology</a></li>
+         <li><a href="#">dermatalogy</a></li>
+         <li><a href="#">gynaecology</a></li>
+         <li><a href="#">psychology</a></li>
+         <li><a href="#">others</a></li>
+      </ul></div>
+     <button type="button" class="btn btn-success">
+         <span class="glyphicon glyphicon-search"></span>Search</button>
+   </div>
+
+   <div class="col-sm-7"><blockquote>
+    <h4>Appointment Queue
+    <span class="label label-warning">5</span></h4>
+   <button class="btn btn-info">News<span class="badge">3</span></button>
+   </blockquote></div>
+
+   <div class="col-sm-1">
+     <button class="btn btn-danger" data-toggle="modal" 
+     data-target="#mymodal"><span class="glyphicon glyphicon-info-sign"></span></button>
+
+    <div class="modal" id="mymodal" role="dialog">
+    <div class="modal-dialog modal-sm">
+    <div class="modal-content">
+
+    <div class="modal-header">
+    <button class="close" data-dismiss="modal">&times;</button>
+    <h2 class="modal-title"><img src="emo.jpg" height="200" width="275"></h2></div>
+
+    <div class="modal-body">
+     <b>Emergency Appointment<b><br>
+      <input type="text" placeholder="Enter Reason">
+      <button class="btn btn-warning">Next</button>
+    </div>
+
+    <div class="modal-footer">
+    <button class="btn btn-primary" data-dismiss="modal">Close</button>
+    </div></div></div></div></div></div><br>
+
+   <ul class="nav nav-pills nav-justified">
+    <li class="active"><a href="#">Find A Doctor</a></li>
+    <li class="disabled"><a href="#">Call Now</a></li>
+   </ul>
+
+  </div>
+ </body>
+</html>
